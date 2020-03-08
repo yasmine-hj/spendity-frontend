@@ -4,12 +4,12 @@ import Category from './Category'
 
 const Categories = (props) => {
 
+    const categories = props.categories.map(category => <Category key={category.id} category={category} />)
+
     return (
         <div>
-            {props.categories.map(category => 
-                <button key={category.id}>
-                    <Link to={`/categories/${category.id}`}>{category.name}{category.image}></Link>
-                </button>)}
+            <h3>Categories:</h3>
+            {categories}
         </div>
     )
 

@@ -1,17 +1,17 @@
 import React from 'react'
-import {Redirect} from 'react-router-dom'
+// import {Redirect} from 'react-router-dom'
 import BudgetsContainer from '../containers/BudgetsContainer'
 
-
 const Category = (props) => {
-    console.log(props)
-    let category = props.categories.filter(category => category.id === props.match.params.id)[0]
-    console.log(category)
+    console.log(props.category)
+
+    let category = props.category
     return(
         <div>
             <h2>
-                { category ? category.name : null} - { category ? category.image : null}
+                { category ? category.name : null} 
             </h2>
+            <img src={category.image}></img>
             <BudgetsContainer category={category}/>
         </div>
     )

@@ -37,3 +37,4 @@ class BudgetInput extends React.Component {
 }
 
 export default connect(null, {addBudget})(BudgetInput)
+

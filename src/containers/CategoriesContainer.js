@@ -8,16 +8,23 @@ import NavBar from '../components/NavBar'
 import Logo from '../components/Logo'
 
 class CategoriesContainer extends React.Component {
+    
     componentDidMount(){
         this.props.fetchCategories()
     }
 
     render(){
         return (
-            <div>
+            <div className="App">
+                <Logo />
                 <NavBar></NavBar>
+                <h2>WELCOME TO SPENDITY!</h2>
+                <p>Select a category & start budgeting!</p>
+                <Categories categories={this.props.categories} />
+
                 <Switch>
                     <Route path='/categories/:id' render={(routerProps) => <Category {...routerProps} categories={this.props.categories}/>}/>
+                    <Route path='/categories' render={(routerProps) => <Category {...routerProps} categories={this.props.categories}/>}/>
                 </Switch>
             </div>
         )
