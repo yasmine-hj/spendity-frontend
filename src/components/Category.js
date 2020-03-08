@@ -1,6 +1,6 @@
 import React from 'react'
-// import {Redirect} from 'react-router-dom'
-import BudgetsContainer from '../containers/BudgetsContainer'
+import groceries from './img/groceries.png'
+
 
 const Category = (props) => {
     console.log(props.category)
@@ -9,10 +9,9 @@ const Category = (props) => {
     return(
         <div>
             <h2>
-                { category ? category.name : null} 
+                { category.name } 
             </h2>
-            <img src={category.image}></img>
-            <BudgetsContainer category={category}/>
+            <img src={groceries}></img>
         </div>
     )
 }
