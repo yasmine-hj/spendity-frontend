@@ -4,7 +4,7 @@ import {createStore, applyMiddleware, compose} from 'redux'
 import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'
 import {BrowserRouter as Router} from 'react-router-dom'
-import accountReducer from './reducers/accountReducer'
+import accountReducer from './reducers/categoryReducer'
 import './index.css';
 import App from './App';
 

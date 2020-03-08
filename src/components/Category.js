@@ -9,7 +9,7 @@ const Category = (props) => {
     return(
         <div>
             <h2>{ category.name }{ category.image }</h2>
-            <BudgetsContainer category={category}/><br>
+            <BudgetsContainer category={category}/>
         </div>
     )
 }

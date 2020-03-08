@@ -15,7 +15,7 @@ class CategoriesContainer extends React.Component {
     render(){
         return (
             <div>
-               </NavBar>
+                <NavBar></NavBar>
                 <Switch>
                     <Route path='/categories/:id' render={(routerProps) => <Category {...routerProps} categories={this.props.categories}/>}/>
                 </Switch>

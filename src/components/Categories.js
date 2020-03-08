@@ -8,7 +8,7 @@ const Categories = (props) => {
         <div>
             {props.categories.map(category => 
                 <button key={category.id}>
-                    <Link to={`/categories/${category.id}`}>{category.name}{category.image}</link>
+                    <Link to={`/categories/${category.id}`}>{category.name}{category.image}></Link>
                 </button>)}
         </div>
     )

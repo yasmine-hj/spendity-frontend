@@ -13,7 +13,7 @@ export const addBudget = (budget, categoryId) => {
           if (category.error) {
             alert(category.error)
           } else {
-            dispatch({type: 'ADD_BUDGET', category: json})
+            dispatch({type: 'ADD_BUDGET', payload: category})
           }
         }
       )
