@@ -4,6 +4,6 @@ export const deleteBudget = (budgetId, categoryId) => {
         method: 'DELETE'
       })
       .then(response => response.json())
-      .then(account => dispatch({type: 'DELETE_BUDGET', category: json}))
+      .then(category => dispatch({type: 'DELETE_BUDGET', category: json}))
     }
   }
