@@ -3,20 +3,23 @@ import { connect } from 'react-redux'
 import { addBudget } from '..actions/addBudget'
 import'../App.css'
 import Logo from '../components/Logo'
-import BudgetFormTitle from '../components/BudgetFormTitle'
-import BudgetFormIngredients from '../components/BudgetFormIngredients'
-import BudgetFormMethod from '../components/RecipeFormMethod'
-import BudgetFormSubmit from '../components/RecipeFormSubmit'
+import BudgetFormCategory from '../components/BudgetFormCategory'
+import BudgetFormAmount from '../components/BudgetFormAmount'
+import BudgetFormCurrency from '../components/BudgetFormCurrency'
+import BudgetFormNotes from '../components/BudgetFormNotes'
+import BudgetFormStart from '../components/BudgetFormStart'
+import BudgetFormEnd from '../components/BudgetFormEnd'
+import BudgetFormSubmit from '../components/BudgetFormSubmit'
 
 export class BudgetFormContainer extends Component {
 
     state = {
         Category: '',
-        Budgeted Amount: '',
+        BudgetedAmount: '',
         Currency: '',
         Notes: '',
-        Start date: '',
-        End date: '',
+        StartDate: '',
+        EndDate: ''
     }
 
     handleSubmit = event => {
@@ -33,11 +36,11 @@ export class BudgetFormContainer extends Component {
         })
         this.setState({
             Category: '',
-            Budgeted Amount: '',
+            BudgetedAmount: '',
             Currency: '',
             Notes: '',
-            Start date: '',
-            End date: '',          
+            StartDate: '',
+            EndDate: ''       
         })
     }
 
