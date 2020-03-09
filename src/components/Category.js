@@ -1,5 +1,4 @@
 import React from 'react'
-import groceries from './img/groceries.png'
 
 
 const Category = (props) => {
@@ -7,11 +6,13 @@ const Category = (props) => {
 
     let category = props.category
     return(
-        <div>
-            <h2>
-                { category.name } 
-            </h2>
-            <img src={groceries}></img>
+        <div className="cat-container">
+            <div className="categories-menu">
+                <div className="category-box">
+                    <h2>{category.name}</h2>
+                    <img className="icon" src = {require(`${category.image}`)}/>
+                </div> 
+            </div>
         </div>
     )
 }
