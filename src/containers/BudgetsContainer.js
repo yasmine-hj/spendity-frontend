@@ -1,6 +1,7 @@
 import React from 'react'
 import BudgetInput from '../components/BudgetInput'
 import Budgets from '../components/Budgets'
+import'../App.css'
 
 class BudgetsContainer extends React.Component {
 

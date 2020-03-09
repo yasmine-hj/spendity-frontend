@@ -6,6 +6,7 @@ import Categories from '../components/Categories'
 import Category from '../components/Category'
 import NavBar from '../components/NavBar'
 import Logo from '../components/Logo'
+import'../App.css'
 
 class CategoriesContainer extends React.Component {
     
