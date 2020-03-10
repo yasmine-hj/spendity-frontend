@@ -9,8 +9,8 @@ const Category = (props) => {
         <div className="cat-container">
             <div className="categories-menu">
                 <div className="category-box">
-                     <Link to={`/categories/${category.id}/budgets`} style={{paddingRight: '50px', color: 'black'}}>{category.name} </Link>
-                    <img className="icon" src = {require(`${category.image}`)}/>
+                     <Link to={`/categories/${category.id}/budgets`} style={{paddingRight: '50px', color: 'black'}}>{category.name}</Link>
+                    <img className="icon" src = {require(`${category.image}`)} alt={category.name}/>
                 </div> 
             </div>
         </div>

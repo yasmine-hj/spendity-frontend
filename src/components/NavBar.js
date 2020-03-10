@@ -11,7 +11,7 @@ const NavBar = (props) => {
       </div>
       <div className='Links'>
         <Link to='/categories' style={{paddingRight: '30px', color: 'white'}} >Categories</Link>
-        <Link to='/about' style={{paddingRight: '10px'}} style={{color: 'white'}}>About</Link>
+        <Link to='/about' style={{paddingRight: '10px', color: 'white'}}>About</Link>
       </div>
       <br></br>
     </div>

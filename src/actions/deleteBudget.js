@@ -1,6 +1,6 @@
 export const deleteBudget = (budgetId, categoryId) => {
     return (dispatch) => {
-      return fetch(`http://localhost:3000/api/v1/categories/${categoryId}/transactions/${budgetId}`, {
+      return fetch(`http://localhost:3000/api/v1/categories/${categoryId}/budgets/${budgetId}`, {
         method: 'DELETE'
       })
       .then(response => response.json())
