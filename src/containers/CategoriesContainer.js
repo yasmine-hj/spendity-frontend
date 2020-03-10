@@ -4,8 +4,6 @@ import {Route, Switch} from 'react-router-dom'
 import {fetchCategories} from '../actions/fetchCategories'
 import Categories from '../components/Categories'
 import Category from '../components/Category'
-import NavBar from '../components/NavBar'
-import Logo from '../components/Logo'
 import'../App.css'
 
 class CategoriesContainer extends React.Component {
@@ -17,13 +15,12 @@ class CategoriesContainer extends React.Component {
     render(){
         return (
             <div className="App">
-                <h2>WELCOME TO SPENDITY!</h2>
+                <h1>WELCOME TO SPENDITY!</h1>
                 <p>Select a category & start budgeting!</p>
                 <Categories categories={this.props.categories} />
 
                 <Switch>
-                    <Route path='/categories/:id' render={(routerProps) => <Category {...routerProps} categories={this.props.categories}/>}/>
-                    <Route path='/categories' render={(routerProps) => <Category {...routerProps} categories={this.props.categories}/>}/>
+                    <Route path={`/categories/{:categoryId}/budgets`} render={(routerProps) => <Category {...routerProps} category={this.props.category.budgets}/>}/>
                 </Switch>
             </div>
         )
@@ -31,6 +28,7 @@ class CategoriesContainer extends React.Component {
 }
 
 const mapStateToProps = state => {
+    // debugger
     return {
         categories: state.categories
     }

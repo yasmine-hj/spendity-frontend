@@ -2,6 +2,7 @@
 
 .App {
   text-align: center;
+  color: rgb(0,53,61);
   font-family: 'Roboto Mono', monospace;
   background-color: rgb(243, 243, 243);
 
@@ -24,6 +25,7 @@
 }
 
 .category-box {
+  color: rgb(0,53,61);
   width: 100%;
   margin: 0 auto;
   font-family: 'Roboto Mono', monospace;

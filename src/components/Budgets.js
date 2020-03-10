@@ -1,8 +1,9 @@
+//container
 import React from 'react'
 import {connect} from 'react-redux'
 import {deleteBudget} from '../actions/deleteBudget'
 class Budgets extends React.Component {
-    state = {}
+    // state = {}
 
     handleDelete = (budget) => {
         this.props.deleteBudget(budget.id, budget.category_id)

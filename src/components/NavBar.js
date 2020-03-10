@@ -5,12 +5,12 @@ import Logo from './Logo'
 const NavBar = (props) => {
 
   return (
-    <div class='Nav'>
-      <div class='Logo'>
+    <div className='Nav'>
+      <div className='Logo'>
         <Logo/>
       </div>
-      <div class='Links'>
-        <Link to='/' style={{paddingRight: '30px', color: 'white'}} >Categories</Link>
+      <div className='Links'>
+        <Link to='/categories' style={{paddingRight: '30px', color: 'white'}} >Categories</Link>
         <Link to='/about' style={{paddingRight: '10px'}} style={{color: 'white'}}>About</Link>
       </div>
       <br></br>

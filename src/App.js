@@ -1,8 +1,12 @@
 import React from 'react';
-import NavBar from './components/NavBar'
 import {connect} from 'react-redux';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import categoryReducer from './reducers/categoryReducer'
+import './index.css';
+import BudgetsContainer from './containers/BudgetsContainer';
+import AboutContainer from './containers/AboutContainer';
 import CategoriesContainer from './containers/CategoriesContainer';
-import './App.css';
+import NavBar from './components/NavBar'
 
 class App extends React.Component {
 
@@ -11,8 +15,14 @@ class App extends React.Component {
   return (
 
       <div className="App">
-              <NavBar></NavBar>
-        <CategoriesContainer/>
+        <Router>
+        <NavBar></NavBar>
+          <Route exact path="/" component={CategoriesContainer} />
+           <Route exact path="/categories" component={CategoriesContainer} />
+           <Route exact path="/about" component={AboutContainer} />
+            {/* <Route exact path="/budgets" component={BudgetsContainer} />  */}
+        </Router>
+
       </div>
     );
   }

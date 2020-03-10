@@ -20,11 +20,6 @@ let store = createStore(categoryReducer, composeEnhancers(applyMiddleware(thunk)
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
-      <Route exact path="/" component={App} />
-      <Route exact path="/about" component={AboutContainer} />
-      <Route exact path="/budgets" component={BudgetsContainer} /> 
       <App />
-    </Router>
   </Provider>,
   document.getElementById('root'));
