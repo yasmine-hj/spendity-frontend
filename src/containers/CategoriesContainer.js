@@ -17,7 +17,6 @@ class CategoriesContainer extends React.Component {
     render(){
         return (
             <div className="App">
-                <Logo />
                 <h2>WELCOME TO SPENDITY!</h2>
                 <p>Select a category & start budgeting!</p>
                 <Categories categories={this.props.categories} />

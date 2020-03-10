@@ -1,18 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet");
+
 .App {
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  background-color: rgb(243, 243, 243);
+
 }
 
+.Nav{
+  margin: 0 auto;
+  background-color:rgb(0,53,61);
+  color: aliceblue;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.Logo{
+  text-align: left;
+}
+
+.Links{
+  text-align: right;
+  color: white
+}
+
+.category-box {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Roboto Mono', monospace;
+
+}
 .categories-menu {
 width: 100%;
 margin: 0 auto;
+font-family: 'Roboto Mono', monospace;
 
 }
-
-
 
 .icon {
   margin: 50px 100px 50px 100px;
   width: 100px;
   height: 100px;
+  font-family: 'Roboto Mono', monospace;
+
 
 }

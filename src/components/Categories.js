@@ -8,7 +8,6 @@ const Categories = (props) => {
 
     return (
         <div>
-            <h3>Categories:</h3>
             {categories}
         </div>
     )

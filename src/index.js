@@ -12,7 +12,7 @@ import BudgetsContainer from './containers/BudgetsContainer';
 import AboutContainer from './containers/AboutContainer';
 import CategoriesContainer from './containers/CategoriesContainer';
 
-import BudgetFormContainer from './containers/BudgetFormContainer';
+// import BudgetFormContainer from './containers/BudgetFormContainer';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -23,7 +23,6 @@ ReactDOM.render(
     <Router>
       <Route exact path="/" component={App} />
       <Route exact path="/about" component={AboutContainer} />
-      <Route exact path="/budget/new"component={BudgetFormContainer} />
       <Route exact path="/budgets" component={BudgetsContainer} /> 
       <App />
     </Router>
