@@ -4,8 +4,14 @@ import {deleteBudget} from '../actions/deleteBudget'
 
 class Budgets extends React.Component {
 
-    render() {
+    state = {}
 
+    handleDelete = (budget) => {
+        this.props.deleteBudget(budget.id, budget.category_id)
+      }
+
+    render() {
+        console.log(this)
         const categoryName = this.props.category && this.props.category.name 
         return (
             <div>
@@ -17,6 +23,7 @@ class Budgets extends React.Component {
                     <h3>Notes: {budget.notes}</h3>
                     <h3>Start date: {budget.start_date}</h3>
                     <h3>End date: {budget.end_date}</h3>
+                    <button onClick={() => this.handleDelete(budget)}>Delete</button>
                     </div>
                 )})}
             </div>
