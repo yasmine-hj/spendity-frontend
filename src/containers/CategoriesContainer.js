@@ -18,7 +18,6 @@ class CategoriesContainer extends React.Component {
     }
 
     render(){
-        // console.log(this.props.categories)
         return (
             <div className="App">
                 <h1>WELCOME TO SPENDITY!</h1>
@@ -30,7 +29,6 @@ class CategoriesContainer extends React.Component {
 }
 
 const mapStateToProps = state => {
-    // debugger
     return {
         categories: state.categories
     }

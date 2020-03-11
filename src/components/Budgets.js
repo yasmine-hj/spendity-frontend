@@ -1,50 +1,24 @@
-//container
 import React from 'react'
 import {connect} from 'react-redux'
 import {deleteBudget} from '../actions/deleteBudget'
 
 class Budgets extends React.Component {
-    // state = {}
-
-    // handleDelete = (budget) => {
-    //     this.props.deleteBudget(budget.id, budget.category_id)
-    // }
-
-    // render() {
-    //     // console.log(this.props)
-    //     return (
-    //         <div>
-    //             {this.props.budgets && this.props.budgets.map(budget =>
-    //                 <li key={budget.id}> {budget.amount} - {budget.currency} - {budget.notes}</li>
-    //                 )}
-    //         </div>
-    //     )
-    // }
 
     render() {
-        // const budgets = this.props.budgets.map(budget => <Category key={budget.id} budget={budget} />)
-        // const categories = props.categories.map(category => <Category key={category.id} category={category} />)
 
-        console.log(this)
+        const categoryName = this.props.budgets && this.props.budgets.name 
         return (
             <div>
-
+                <h1>{categoryName}</h1>
                 {this.props.budgets && this.props.budgets.budgets.map(budget => { return(
-                    <div key={budget.id}>
-                    <h2>{budget.amount}</h2>
-                    <h2>{budget.currency}</h2>
-                    <h2>{budget.notes}</h2>
-                    <h2>{budget.start_date}</h2>
-                    <h2>{budget.end_date}</h2>
+                    <div className="budget-box" key={budget.id} style={{background: 'white'}}>
+                    <h2>Budgeted amount: {budget.amount}</h2>
+                    <h3>Currency: {budget.currency}</h3>
+                    <h3>Notes: {budget.notes}</h3>
+                    <h3>Start date: {budget.start_date}</h3>
+                    <h3>End date: {budget.end_date}</h3>
                     </div>
                 )})}
-        <div className="cat-budget-container">
-            <div className="cat-budget-menu">
-                <div className="cat-budget-box">
-              
-                </div> 
-            </div>
-        </div>
             </div>
         )
     }
