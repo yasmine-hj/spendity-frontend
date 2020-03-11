@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet");
 
 .App {
+  margin-bottom: 5%;
   text-align: center;
   color: rgb(0,53,61);
   font-family: 'Roboto Mono', monospace;

@@ -4,8 +4,7 @@ import {fetchCategories} from '../actions/fetchCategories'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import'../App.css'
-import BudgetInput from '../components/BudgetInput'
-
+import img from '../components/img/newbudget.png'
 
 class BudgetsContainer extends React.Component {
     constructor (props) {
@@ -31,8 +30,9 @@ class BudgetsContainer extends React.Component {
                 <Budgets categoryId={this.props.match.params.categoryId}
                 category={this.props.categories.find(c => {return c.id === parseInt(this.props.match.params.categoryId)})}
                 />
-
+                <img className="icon" src={img} alt="img"/>
                 <Link to={`/categories/${categoryId}/budgets/new`} style={{paddingRight: '50px', color: 'black'}}>New Budget</Link>
+                <br></br>
             </div>
         )
     } 
