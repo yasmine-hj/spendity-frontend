@@ -3,8 +3,9 @@ import Budgets from '../components/Budgets'
 import {fetchCategories} from '../actions/fetchCategories'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
-
 import'../App.css'
+import BudgetInput from '../components/BudgetInput'
+
 
 class BudgetsContainer extends React.Component {
     constructor (props) {
@@ -28,13 +29,13 @@ class BudgetsContainer extends React.Component {
         return (
             <div>
                 <Budgets categoryId={this.props.match.params.categoryId}
-                budgets={this.props.categories.find(c => {return c.id === parseInt(this.props.match.params.categoryId)})}
+                category={this.props.categories.find(c => {return c.id === parseInt(this.props.match.params.categoryId)})}
                 />
+
                 <Link to={`/categories/${categoryId}/budgets/new`} style={{paddingRight: '50px', color: 'black'}}>New Budget</Link>
             </div>
         )
-    }
-    
+    } 
 }
 const mapStateToProps = state => {
     return {

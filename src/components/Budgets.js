@@ -6,11 +6,11 @@ class Budgets extends React.Component {
 
     render() {
 
-        const categoryName = this.props.budgets && this.props.budgets.name 
+        const categoryName = this.props.category && this.props.category.name 
         return (
             <div>
                 <h1>{categoryName}</h1>
-                {this.props.budgets && this.props.budgets.budgets.map(budget => { return(
+                {this.props.category && this.props.category.budgets.map(budget => { return(
                     <div className="budget-box" key={budget.id} style={{background: 'white'}}>
                     <h2>Budgeted amount: {budget.amount}</h2>
                     <h3>Currency: {budget.currency}</h3>

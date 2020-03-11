@@ -5,7 +5,7 @@ import {fetchCategories} from '../actions/fetchCategories'
 import Categories from '../components/Categories'
 import Category from '../components/Category'
 import Budgets from '../components/Budgets'
-import CategoryBudgets from '../components/CategoryBudgets'
+// import CategoryBudgets from '../components/CategoryBudgets'
 
 import BudgetsContainer from '../containers/BudgetsContainer'
 

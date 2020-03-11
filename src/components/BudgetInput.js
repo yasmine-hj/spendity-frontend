@@ -16,11 +16,13 @@ class BudgetInput extends React.Component {
       }
 
       render(){
+            console.log(this)
+
           return (
               <div>
-                  <form onSubmit={this.handleSubmit}>
+                  {/* <form onSubmit={this.handleSubmit}> */}
                       <label>Budgeted Amount:</label>
-                      <input type="integer" name="amount" value={this.state.amount} onChange={this.handleChange}/>
+                      {/* <input type="integer" name="amount" value={this.state.amount} onChange={this.handleChange}/>
                       <label>Currency:</label>
                       <input type="text" name="currency" value={this.state.currency} onChange={this.handleChange}/>
                       <label>Notes:</label>
@@ -30,8 +32,8 @@ class BudgetInput extends React.Component {
                       <label>End date:</label>
                       <input type="text" name="endDate" value={this.state.endDate} onChange={this.handleChange}/>
                       <input type="submit"/>
-                  </form>
-              </div>
+                  </form> */}
+            </div>  
           )
       }
 }
