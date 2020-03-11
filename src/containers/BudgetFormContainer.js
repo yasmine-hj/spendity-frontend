@@ -12,13 +12,12 @@ componentDidMount(){
     const categoryId=  this.props.match.params.categoryId
     console.log( (categoryId))
     this.setState({
-        category : this.props.categories.find(c => {return c.id === parseInt(categoryId)})
+        c : this.props.categories.find(c => {return c.id === parseInt(categoryId)})
     })
 }
 
   render(){
-    // console.log(this)
-
+    console.log(this)
       return(
           <div>
             <h1> Hello </h1>
@@ -33,7 +32,7 @@ componentDidMount(){
 
 const mapStateToProps = state => {
     return {
-        category: state.category
+        categories: state.categories
     }
 }
 export default connect(mapStateToProps, {fetchCategories})(BudgetFormContainer)

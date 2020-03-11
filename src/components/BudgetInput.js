@@ -3,7 +3,13 @@ import {connect} from 'react-redux'
 import {addBudget} from '../actions/addBudget'
 
 class BudgetInput extends React.Component {
-    
+    state = {
+      amount: '',
+      currency: '',
+      notes: '',
+      startDate: '',
+      endDate: ''
+    }
     handleChange = (event) => {
         this.setState({
           [event.target.name]: event.target.value
@@ -12,7 +18,14 @@ class BudgetInput extends React.Component {
 
       handleSubmit = (event) => {
         event.preventDefault()
-        this.props.addBudget(this.state, this.props.budget.id)
+        this.props.addBudget(this.state, this.props.category.id)
+        this.setState({
+          amount: '',
+          currency: '',
+          notes: '',
+          startDate: '',
+          endDate: ''
+        })
       }
 
       render(){
@@ -20,9 +33,9 @@ class BudgetInput extends React.Component {
 
           return (
               <div>
-                  {/* <form onSubmit={this.handleSubmit}> */}
+                  <form onSubmit={this.handleSubmit}> 
                       <label>Budgeted Amount:</label>
-                      {/* <input type="integer" name="amount" value={this.state.amount} onChange={this.handleChange}/>
+                      <input type="integer" name="amount" value={this.state.amount} onChange={this.handleChange}/>
                       <label>Currency:</label>
                       <input type="text" name="currency" value={this.state.currency} onChange={this.handleChange}/>
                       <label>Notes:</label>
@@ -32,7 +45,7 @@ class BudgetInput extends React.Component {
                       <label>End date:</label>
                       <input type="text" name="endDate" value={this.state.endDate} onChange={this.handleChange}/>
                       <input type="submit"/>
-                  </form> */}
+                  </form>
             </div>  
           )
       }
