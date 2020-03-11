@@ -33,9 +33,9 @@ class BudgetInput extends React.Component {
 
           return (
               <div>
-                  <form onSubmit={this.handleSubmit}> 
+                  <form className="budget-form" onSubmit={this.handleSubmit}> 
                       <label>Budgeted Amount:</label>
-                      <input type="integer" name="amount" value={this.state.amount} onChange={this.handleChange}/>
+                      <input type="number" name="amount" value={this.state.amount} onChange={this.handleChange}/>
                       <label>Currency:</label>
                       <input type="text" name="currency" value={this.state.currency} onChange={this.handleChange}/>
                       <label>Notes:</label>
