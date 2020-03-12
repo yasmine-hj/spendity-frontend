@@ -18,7 +18,7 @@ componentDidMount(){
     console.log(this)
       return(
           <div className="budget-form">
-            <h1> New budget: </h1>
+            {/* <h1> New budget: </h1> */}
              <BudgetInput categoryId={this.props.match.params.categoryId}
              category={this.props.categories.find(c => {return c.id === parseInt(this.props.match.params.categoryId)})}
              />

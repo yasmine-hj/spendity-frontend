@@ -6,6 +6,9 @@ Spendity is a simple budgeting app made to help you manage your money better!
 
 Budget how much you would like to spend per category.
 
+## Demo
+![demo](demo/demo.gif)
+
 ## Getting Started
 
 To start the app clone and start up both this repo and the backend:

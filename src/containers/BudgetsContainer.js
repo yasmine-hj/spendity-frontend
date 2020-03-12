@@ -31,7 +31,7 @@ class BudgetsContainer extends React.Component {
             <div>
                 <Budgets categoryId={this.props.match.params.categoryId}
                 category={this.props.categories.find(c => {return c.id === parseInt(this.props.match.params.categoryId)})}/>
-                  <Link to={`/categories/${categoryId}/budgets/new`} className='new-budget-link' style={{ textDecoration: 'none' }}>
+                  <Link to={`/categories/${categoryId}/budgets/new`} className='new-budget-link' style={{ textDecoration: 'none', color:'grey' }}>
                     <Button variant="contained" >
                          <h2>New Budget</h2>
                          <img className="icon" src={img} alt="img"/>
