@@ -5,7 +5,7 @@ const Categories = (props) => {
     const categories = props.categories.map(category => <Category key={category.id} category={category} />)
 
     return (
-        <div>
+        <div className="cat-menu">
             {categories}
         </div>
     )

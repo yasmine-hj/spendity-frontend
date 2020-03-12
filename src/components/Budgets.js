@@ -15,10 +15,13 @@ class Budgets extends React.Component {
     render() {
         console.log(this)
         const categoryName = this.props.category && this.props.category.name 
+        // const categoryImage = this.props.category && this.props.category.image 
+
         return (
             <div>
                 <div className="category-box-selected">
                     <h1>{categoryName}</h1>
+                    {/* <img className="icon" src = {require(`${categoryImage}`)} alt={categoryName}/> */}
                 </div>
                 {this.props.category && this.props.category.budgets.map(budget => { return(
                     <div className='budget-form' key={budget.id} style={{background: 'white'}}>
