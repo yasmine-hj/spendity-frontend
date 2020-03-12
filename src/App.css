@@ -21,12 +21,11 @@
 }
 
 .category-box{
-  width: 100%;
   font-family: 'Roboto Mono', monospace;
 	width: 200px;
-	padding: 0px;
+	padding: 10px;
 	background: #FFFFFF;
-	margin: 50px auto;
+	margin: 100px auto;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
 
@@ -103,6 +102,7 @@
   font-family: 'Roboto Mono', monospace;
 }
 
+
 .Logo{
   text-align: left;
 }
@@ -110,6 +110,10 @@
 .Links{
   text-align: right;
   color: white
+}
+
+.Links:hover{
+  font: 20px;
 }
 
 .category-box {
@@ -120,9 +124,26 @@
 }
 
 
+.category-box:hover {
+  background-color: pink
+}
+
+.category-box-selected{
+text-align: left;
+margin-left: 100px ;
+font-size: 15px;
+}
+
 .icon {
+  margin: 50px 100px 50px 100px;
+  width: 80px;
+  height: 80px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.icon:hover {
   margin: 50px 100px 50px 100px;
   width: 100px;
   height: 100px;
-  font-family: 'Roboto Mono', monospace;
+
 }

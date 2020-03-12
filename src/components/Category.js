@@ -11,7 +11,7 @@ const Category = (props) => {
             <div className="category-box">
             <Grid container spacing={3} justify="center">
             <Grid item>
-                <Link to={`/categories/${category.id}/budgets`}style={{color: 'white'}}>
+                <Link to={`/categories/${category.id}/budgets`}style={{ textDecoration: 'none' }}>
                     <Button>
                         <h2>{category.name}</h2>
                         <img className="icon" src = {require(`${category.image}`)} alt={category.name}/>

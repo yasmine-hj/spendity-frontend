@@ -16,8 +16,10 @@ class Budgets extends React.Component {
         console.log(this)
         const categoryName = this.props.category && this.props.category.name 
         return (
-            <div >
-                <h1>{categoryName}</h1>
+            <div>
+                <div className="category-box-selected">
+                    <h1>{categoryName}</h1>
+                </div>
                 {this.props.category && this.props.category.budgets.map(budget => { return(
                     <div className='budget-form' key={budget.id} style={{background: 'white'}}>
                     <h2 style={{color: 'white'}}>Budgeted amount: {budget.amount}</h2>
