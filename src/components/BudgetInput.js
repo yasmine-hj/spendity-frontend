@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addBudget} from '../actions/addBudget'
+import Button from '@material-ui/core/Button';
 
 class BudgetInput extends React.Component {
     state = {
@@ -44,7 +45,7 @@ class BudgetInput extends React.Component {
                       <input type="text" name="startDate" value={this.state.startDate} onChange={this.handleChange}/>
                       <label>End date:</label>
                       <input type="text" name="endDate" value={this.state.endDate} onChange={this.handleChange}/>
-                      <input type="submit"/>
+                      <Button variant="contained" color="primary" type="submit">Submit</Button>
                   </form>
             </div>  
           )

@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {deleteBudget} from '../actions/deleteBudget'
-import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button'
 
 class Budgets extends React.Component {
 
@@ -11,6 +11,7 @@ class Budgets extends React.Component {
         this.props.deleteBudget(budget.id, budget.category_id)
       }
 
+      
     render() {
         console.log(this)
         const categoryName = this.props.category && this.props.category.name 
@@ -24,7 +25,9 @@ class Budgets extends React.Component {
                     <h3>Notes: {budget.notes}</h3>
                     <h3>Start date: {budget.start_date}</h3>
                     <h3>End date: {budget.end_date}</h3>
-                    <Button onClick={() => this.handleDelete(budget)}>Delete</Button>
+                    <Button variant="contained" color="secondary" onClick={() => this.handleDelete(budget)}>
+                        Delete
+                    </Button>
                     <br></br>
                     </div>
                 )})}

@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 
 const Category = (props) => {
 
@@ -8,12 +9,16 @@ const Category = (props) => {
     return(
         <div className="categories-menu">
             <div className="category-box">
-                <Link to={`/categories/${category.id}/budgets`}>
+            <Grid container spacing={3} justify="center">
+            <Grid item>
+                <Link to={`/categories/${category.id}/budgets`}style={{color: 'white'}}>
                     <Button>
                         <h2>{category.name}</h2>
                         <img className="icon" src = {require(`${category.image}`)} alt={category.name}/>
                     </Button>
-                </Link>    
+                </Link> 
+                </Grid>
+                </Grid>
             </div> 
         </div>
     )
