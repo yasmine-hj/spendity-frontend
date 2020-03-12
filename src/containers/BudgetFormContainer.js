@@ -1,8 +1,6 @@
 import React from 'react'
-import {addBudget} from '../actions/addBudget'
 import {fetchCategories} from '../actions/fetchCategories'
 import {connect} from 'react-redux'
-import {Link} from 'react-router-dom'
 import'../App.css'
 import BudgetInput from '../components/BudgetInput'
 

@@ -1,7 +1,5 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
-import categoryReducer from './reducers/categoryReducer'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 import './index.css';
 import BudgetsContainer from './containers/BudgetsContainer';
 import BudgetFormContainer from './containers/BudgetFormContainer';
@@ -23,9 +21,7 @@ class App extends React.Component {
            <Route exact path="/about" component={AboutContainer} />
            <Route path={`/categories/:categoryId/budgets`} component={BudgetsContainer}/>
            <Route path={`/categories/:categoryId/budgets/new`} component={BudgetFormContainer}/>
-
         </Router>
-
       </div>
     );
   }

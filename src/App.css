@@ -20,6 +20,15 @@
 	margin: -30px -30px 30px -30px;
 }
 
+.category-box{
+  font-family: 'Roboto Mono', monospace;
+	width: 200px;
+	padding: 0px;
+	background: #FFFFFF;
+	margin: 50px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+
 .budget-form input[type="text"],
 .budget-form input[type="date"],
 .budget-form input[type="datetime"],

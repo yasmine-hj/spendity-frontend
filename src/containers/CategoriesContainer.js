@@ -1,13 +1,8 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {Route, Switch} from 'react-router-dom'
 import {fetchCategories} from '../actions/fetchCategories'
 import Categories from '../components/Categories'
-import Category from '../components/Category'
-import Budgets from '../components/Budgets'
-// import CategoryBudgets from '../components/CategoryBudgets'
 
-import BudgetsContainer from '../containers/BudgetsContainer'
 
 import'../App.css'
 
