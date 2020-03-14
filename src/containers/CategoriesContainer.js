@@ -12,7 +12,6 @@ class CategoriesContainer extends React.Component {
     }
 
     render(){
-        console.log(this)
         return (
             <div className="App">
                 <br></br>
