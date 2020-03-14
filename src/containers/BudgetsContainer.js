@@ -7,7 +7,6 @@ import'../App.css'
 import img from '../components/img/newbudget.png'
 import Button from '@material-ui/core/Button';
 
-
 class BudgetsContainer extends React.Component {
     constructor (props) {
         super(props);
@@ -18,7 +17,6 @@ class BudgetsContainer extends React.Component {
     componentDidMount(){
         this.props.fetchCategories()
         const categoryId=  this.props.match.params.categoryId
-        console.log( (categoryId))
         this.setState({
             c : this.props.categories.find(c => {return c.id === parseInt(categoryId)})
         })
@@ -36,12 +34,13 @@ class BudgetsContainer extends React.Component {
                          <h2>New Budget</h2>
                          <img className="icon" src={img} alt="img"/>
                     </Button>
-                    </Link>
+                  </Link>
                 <br></br>
             </div>
         )
     } 
 }
+
 const mapStateToProps = state => {
     return {
         categories: state.categories

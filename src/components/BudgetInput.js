@@ -4,6 +4,7 @@ import {addBudget} from '../actions/addBudget'
 import Button from '@material-ui/core/Button';
 
 class BudgetInput extends React.Component {
+  
   state = {
   amount: '',
   currency: '',
@@ -11,6 +12,7 @@ class BudgetInput extends React.Component {
   startDate: '',
   endDate: ''
   }
+
   handleChange = (event) => {
     this.setState({
     [event.target.name]: event.target.value

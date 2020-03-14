@@ -9,7 +9,7 @@ class Budgets extends React.Component {
 
     handleDelete = (budget) => {
         this.props.deleteBudget(budget.id, budget.category_id)
-      }
+    }
     
     render() {
         const categoryName = this.props.category && this.props.category.name 
@@ -20,7 +20,7 @@ class Budgets extends React.Component {
                     <h1>{categoryName}</h1>
                 </div>
                 {this.props.category && this.props.category.budgets.map(budget => { return(
-                    <div className='budget-form' key={budget.id} style={{background: 'white'}}>
+                <div className='budget-form' key={budget.id} style={{background: 'white'}}>
                     <h2 style={{color: 'white'}}>Budgeted amount: {budget.amount}</h2>
                     <h3>Currency: {budget.currency}</h3>
                     <h3>Notes: {budget.notes}</h3>
@@ -30,7 +30,7 @@ class Budgets extends React.Component {
                     Delete
                     </Button>
                     <br></br>
-                    </div>
+                </div>
                 )})}
             </div>
         )

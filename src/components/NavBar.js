@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom'
 import Logo from './Logo'
 
 const NavBar = (props) => {
-
   return (
     <div className='Nav'>
       <div className='Logo'>
@@ -15,7 +14,6 @@ const NavBar = (props) => {
       </div>
       <br></br>
     </div>
-
   )
 }
 

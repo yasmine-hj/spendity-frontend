@@ -6,5 +6,5 @@ export function fetchCategories() {
         type: 'FETCH_CATEGORIES',
         payload: categories
       }))
-    }
-  }
+   }
+}

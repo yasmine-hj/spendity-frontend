@@ -9,7 +9,6 @@ const Categories = (props) => {
             {categories}
         </div>
     )
-
 }
 
 export default Categories
