@@ -12,7 +12,6 @@ class Budgets extends React.Component {
       }
     
     render() {
-        console.log(this)
         const categoryName = this.props.category && this.props.category.name 
 
         return (
