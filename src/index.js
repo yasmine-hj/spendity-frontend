@@ -7,7 +7,6 @@ import categoryReducer from './reducers/categoryReducer'
 import './index.css';
 import App from './App';
 
-
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 let store = createStore(categoryReducer, composeEnhancers(applyMiddleware(thunk)))

@@ -3,8 +3,6 @@ import {connect} from 'react-redux'
 import {fetchCategories} from '../actions/fetchCategories'
 import Categories from '../components/Categories'
 import Button from '@material-ui/core/Button';
-
-
 import'../App.css'
 
 class CategoriesContainer extends React.Component {
@@ -23,7 +21,6 @@ class CategoriesContainer extends React.Component {
                 <br></br>
                 <Categories categories={this.props.categories} />
                 <br></br>
-
             </div>
         )
     }

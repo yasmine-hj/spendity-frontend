@@ -10,18 +10,15 @@ class Budgets extends React.Component {
     handleDelete = (budget) => {
         this.props.deleteBudget(budget.id, budget.category_id)
       }
-
-      
+    
     render() {
         console.log(this)
         const categoryName = this.props.category && this.props.category.name 
-        // const categoryImage = this.props.category && this.props.category.image 
 
         return (
             <div>
                 <div className="category-box-selected">
                     <h1>{categoryName}</h1>
-                    {/* <img className="icon" src = {require(`${categoryImage}`)} alt={categoryName}/> */}
                 </div>
                 {this.props.category && this.props.category.budgets.map(budget => { return(
                     <div className='budget-form' key={budget.id} style={{background: 'white'}}>
@@ -31,7 +28,7 @@ class Budgets extends React.Component {
                     <h3>Start date: {budget.start_date}</h3>
                     <h3>End date: {budget.end_date}</h3>
                     <Button variant="contained" color="secondary" onClick={() => this.handleDelete(budget)}>
-                        Delete
+                    Delete
                     </Button>
                     <br></br>
                     </div>
@@ -40,6 +37,5 @@ class Budgets extends React.Component {
         )
     }
 }
-
 
 export default connect(null, {deleteBudget})(Budgets)
