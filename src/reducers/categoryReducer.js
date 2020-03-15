@@ -22,7 +22,7 @@ export default function categoryReducer(state = {categories: []}, action) {
             return {...state, categories: categoriesTwo}
             default:
                 return state
-            }
-        }
+    }
+}
           
     

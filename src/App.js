@@ -15,10 +15,10 @@ class App extends React.Component {
         <Router>
         <NavBar></NavBar>
           <Route exact path="/" component={CategoriesContainer} />
-           <Route exact path="/categories" component={CategoriesContainer} />
-           <Route exact path="/about" component={AboutContainer} />
-           <Route path={`/categories/:categoryId/budgets`} component={BudgetsContainer}/>
-           <Route path={`/categories/:categoryId/budgets/new`} component={BudgetFormContainer}/>
+          <Route exact path="/categories" component={CategoriesContainer} />
+          <Route exact path="/about" component={AboutContainer} />
+          <Route path={`/categories/:categoryId/budgets`} component={BudgetsContainer}/>
+          <Route path={`/categories/:categoryId/budgets/new`} component={BudgetFormContainer}/>
         </Router>
       </div>
     );
