@@ -2,22 +2,22 @@
 
 .budget-form{
   font-family: 'Roboto Mono', monospace;
-	width: 500px;
-	padding: 0px;
-	background: #FFFFFF;
-	margin: 50px auto;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  width: 500px;
+  padding: 0px;
+  background: #FFFFFF;
+  margin: 50px auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
 
 .budget-form h2{
-	background: #4D4D4D;
-	text-transform: uppercase;
+  background: #4D4D4D;
+  text-transform: uppercase;
   font-family: 'Roboto Mono', monospace;
-	color: #797979;
-	font-size: 18px;
-	font-weight: 100;
-	padding: 20px;
-	margin: -30px -30px 30px -30px;
+  color: #797979;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 20px;
+  margin: -30px -30px 30px -30px;
 }
 
 .budget-form input[type="text"],
@@ -30,26 +30,25 @@
 .budget-form input[type="url"],
 .budget-form input[type="password"],
 .budget-form textarea,
-.budget-form select 
-{
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
+.budget-form select {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   align: central;
-	outline: none;
-	display: block;
-	width: 100%;
-	padding: 7px;
-	border: none;
-	border-bottom: 1px solid #ddd;
-	background: transparent;
-	margin-bottom: 10px;
-	font: 16px Arial, Helvetica, sans-serif;
-	height: 45px;
+  outline: none;
+  display: block;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  margin-bottom: 10px;
+  font: 16px Arial, Helvetica, sans-serif;
+  height: 45px;
 }
 
 .budget-form textarea{
-	resize:none;
+  resize:none;
   overflow: hidden;
 }
 
@@ -60,26 +59,26 @@
 
 .budget-form input[type="button"], 
 .budget-form input[type="submit"]{
-	-moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
-	-webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
-	box-shadow: inset 0px 1px 0px 0px #45D6D6;
-	background-color: #2CBBBB;
-	border: 1px solid #27A0A0;
-	display: inline-block;
-	cursor: pointer;
-	color: #FFFFFF;
+  -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  box-shadow: inset 0px 1px 0px 0px #45D6D6;
+  background-color: #2CBBBB;
+  border: 1px solid #27A0A0;
+  display: inline-block;
+  cursor: pointer;
+  color: #FFFFFF;
   font-family: 'Roboto Mono', monospace;
-	font-size: 14px;
-	padding: 8px 18px;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-.budget-form input[type="button"]:hover, 
-.budget-form input[type="submit"]:hover {
-	background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
-	background-color:#34CACA;
+  font-size: 14px;
+  padding: 8px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
+.budget-form input[type="button"]:hover, 
+.budget-form input[type="submit"]:hover {
+  background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+  background-color:#34CACA;
+}
 
 .App {
   margin-bottom: 5%;
@@ -96,7 +95,6 @@
   color: aliceblue;
   font-family: 'Roboto Mono', monospace;
 }
-
 
 .Logo{
   text-align: left;
@@ -115,18 +113,16 @@
   color: rgb(0,53,61);
   width: 70%;
   height: 80%;
-  /* margin: 0 auto; */
   font-family: 'Roboto Mono', monospace;
-	/* width: 200px; */
-	padding: 5px;
-	background: #FFFFFF;
-	margin:  auto;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  padding: 5px;
+  background: #FFFFFF;
+  margin:  auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
 
 .category-box:hover{
-	width: 80%;
-	height: 90%;
+  width: 80%;
+  height: 90%;
 
 }
 
@@ -141,15 +137,14 @@
   max-width: 100%;
 }
 
-
 .category-box:hover {
   background-color: pink
 }
 
 .category-box-selected{
-text-align: left;
-margin-left: 100px ;
-font-size: 15px;
+  text-align: left;
+  margin-left: 100px ;
+  font-size: 15px;
 }
 
 .icon {
