@@ -24,7 +24,6 @@ class BudgetFormContainer extends React.Component {
   }
 }
 
-
 const mapStateToProps = state => {
   return {
     categories: state.categories

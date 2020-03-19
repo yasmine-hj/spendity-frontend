@@ -21,7 +21,9 @@ class BudgetInput extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
+    console.log('a')
     this.props.addBudget(this.state, this.props.category.id)
+    console.log('e')
     this.setState({
       amount: '',
       currency: '',
