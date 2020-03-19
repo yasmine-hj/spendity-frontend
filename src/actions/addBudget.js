@@ -1,5 +1,4 @@
 export const addBudget = (budget, categoryId) => {
-    console.log('b')
     return (dispatch) => {
       fetch(`http://localhost:3000/api/v1/categories/${categoryId}/budgets`, {
         method: 'POST', 
@@ -10,7 +9,6 @@ export const addBudget = (budget, categoryId) => {
       })
       .then(response => response.json())
       .then(category => {
-        console.log('c')
           if (category.error) {
             alert(category.error)
           } else {
@@ -19,5 +17,4 @@ export const addBudget = (budget, categoryId) => {
         }
       )
     }
-    console.log('d')
   }

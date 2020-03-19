@@ -38,7 +38,6 @@ class Categories extends React.Component{
                     return x + y.amount;}, 0);
                 return   totalBudgetB - totalBudgetA
             })
-            console.log(this)
         }
          
         return (
