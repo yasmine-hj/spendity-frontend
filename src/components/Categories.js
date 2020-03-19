@@ -3,7 +3,6 @@ import Category from './Category'
 
 class Categories extends React.Component{
 
-
     state = {
         sort: 'Name'
     }
@@ -31,14 +30,15 @@ class Categories extends React.Component{
             })   
         }
 
-        else if(this.state.sort === 'Budgeted Amount'){   
+        else if(this.state.sort === 'Budget'){   
             categories = categories.sort(function(a,b){
                 var totalBudgetA = a.props.category.budgets.reduce(function(x, y){
-                    return x + y;}, 0);
+                    return x + y.amount;}, 0);
                 var totalBudgetB = b.props.category.budgets.reduce(function(x, y){
-                    return x + y;}, 0);
-                return totalBudgetA - totalBudgetB
+                    return x + y.amount;}, 0);
+                return   totalBudgetB - totalBudgetA
             })
+            console.log(this)
         }
          
         return (
@@ -46,7 +46,7 @@ class Categories extends React.Component{
                 <label>Sort by: </label>
                 <select onChange={this.handleChange}>
                     <option>Name</option>
-                    <option>Budgeted Amount</option>
+                    <option>Budget</option>
                 </select>
                 <br/>
                 <br/>
