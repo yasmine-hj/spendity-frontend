@@ -37,8 +37,9 @@ class Categories extends React.Component{
                     return x + y;}, 0);
                 var totalBudgetB = b.props.category.budgets.reduce(function(x, y){
                     return x + y;}, 0);
-                   return totalBudgetA - totalBudgetB}
-        )}
+                return totalBudgetA - totalBudgetB
+            })
+        }
          
         return (
             <div className="menu">
